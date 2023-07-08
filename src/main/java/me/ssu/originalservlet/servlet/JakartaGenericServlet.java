@@ -14,8 +14,8 @@ import java.io.IOException;
 @WebServlet(urlPatterns = "/test")
 public class JakartaGenericServlet extends HttpServlet {
 	@Override
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		System.out.println("로그 : JakartaGenericServlet.service");
-		response.getWriter().println("HTTP 응답 : test");
+		response.getWriter().println("HTTP 응답 : test"); // throws : IOException
 	}
 }
