@@ -2,15 +2,21 @@ package me.ssu.originalservlet.container.servlet;
 
 import jakarta.servlet.ServletContainerInitializer;
 import jakarta.servlet.ServletContext;
-import jakarta.servlet.ServletException;
 
 import java.util.Set;
 
+/**
+ * 서블릿 초기화 첫 번째 방법, 어노테이션 초기화 방법
+ * Since:
+ * Servlet 3.0
+ * See Also:
+ * jakarta.servlet.annotation.HandlesTypes
+ */
 public class JakartaHandlesTypesAnnotationServlet implements ServletContainerInitializer {
 	@Override
-	public void onStartup(Set<Class<?>> c, ServletContext ctx) throws ServletException {
-		System.out.println("MyContainerInitV1.onStartup");
-		System.out.println("MyContainerInitV1 c = " + c);
-		System.out.println("MyContainerInitV1 ctx = " + ctx);
+	public void onStartup(Set<Class<?>> c, ServletContext ctx) {
+		System.out.println("JakartaHandlesTypesAnnotationServlet.onStartup");
+		System.out.println("JakartaHandlesTypesAnnotationServlet c = " + c);
+		System.out.println("JakartaHandlesTypesAnnotationServlet ctx = " + ctx);
 	}
 }
