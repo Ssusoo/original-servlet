@@ -1,4 +1,4 @@
-package me.ssu.originalservlet.container;
+package me.ssu.originalservlet.container.servlet;
 
 import jakarta.servlet.ServletContainerInitializer;
 import jakarta.servlet.ServletContext;
