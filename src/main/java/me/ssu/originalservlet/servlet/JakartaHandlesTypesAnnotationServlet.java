@@ -1,6 +1,5 @@
 package me.ssu.originalservlet.servlet;
 
-import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -18,10 +17,10 @@ import java.io.IOException;
  * jakarta.servlet.annotation.HandlesTypes
  */
 @WebServlet(urlPatterns = "/test")
-public class JakartaGenericServlet extends HttpServlet {
+public class JakartaHandlesTypesAnnotationServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		System.out.println("Log : JakartaGenericServlet.service");
-		response.getWriter().println("HTTP Response : test"); // throws : IOException
+		System.out.println("Log : JakartaHandlesTypesAnnotationServlet.service");
+		response.getWriter().println("HTTP Response : annotation"); // throws : IOException
 	}
 }
