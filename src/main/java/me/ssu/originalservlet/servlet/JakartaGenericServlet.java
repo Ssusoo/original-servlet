@@ -1,4 +1,4 @@
-package me.ssu.originalservlet.container.servlet;
+package me.ssu.originalservlet.servlet;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
