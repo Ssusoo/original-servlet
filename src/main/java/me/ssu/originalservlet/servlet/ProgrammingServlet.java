@@ -9,7 +9,7 @@ import java.io.IOException;
 /**
  * 서블릿 초기화 두 번째 방법, 프로그래밍 방식
  */
-public class JakartaProgrammingServlet extends HttpServlet {
+public class ProgrammingServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		System.out.println("Log : JakartaProgrammingServlet.service");

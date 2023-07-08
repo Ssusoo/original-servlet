@@ -2,7 +2,7 @@ package me.ssu.originalservlet.container;
 
 
 import jakarta.servlet.ServletContext;
-import me.ssu.originalservlet.servlet.JakartaProgrammingServlet;
+import me.ssu.originalservlet.servlet.ProgrammingServlet;
 
 /**
  * http://localhost:8080/programming-servlet
@@ -14,7 +14,7 @@ public class ProgrammingServletContainerInitializerServletContainer implements P
 
 		// 순수 서블릿 코드 등록(프로그래밍 방식)
 		var servletRegistration =
-				servletContext.addServlet("jakartaProgrammingServlet", new JakartaProgrammingServlet());
+				servletContext.addServlet("jakartaProgrammingServlet", new ProgrammingServlet());
 		servletRegistration.addMapping("/programming");
 	}
 }

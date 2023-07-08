@@ -17,7 +17,7 @@ import java.io.IOException;
  * jakarta.servlet.annotation.HandlesTypes
  */
 @WebServlet(urlPatterns = "/test")
-public class JakartaHandlesTypesAnnotationServlet extends HttpServlet {
+public class AnnotationServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		System.out.println("Log : JakartaHandlesTypesAnnotationServlet.service");

@@ -5,7 +5,7 @@ import jakarta.servlet.ServletContext;
 
 import java.util.Set;
 
-public class JakartaHandlesTypesAnnotationServletContainer implements ServletContainerInitializer {
+public class AnnotationServletContainer implements ServletContainerInitializer {
 	@Override
 	public void onStartup(Set<Class<?>> c, ServletContext ctx) {
 		System.out.println("JakartaHandlesTypesAnnotationServlet.onStartup");
