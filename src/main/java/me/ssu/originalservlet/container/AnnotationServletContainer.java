@@ -7,9 +7,9 @@ import java.util.Set;
 
 public class AnnotationServletContainer implements ServletContainerInitializer {
 	@Override
-	public void onStartup(Set<Class<?>> c, ServletContext ctx) {
-		System.out.println("JakartaHandlesTypesAnnotationServlet.onStartup");
-		System.out.println("JakartaHandlesTypesAnnotationServlet c = " + c);
-		System.out.println("JakartaHandlesTypesAnnotationServlet ctx = " + ctx);
+	public void onStartup(Set<Class<?>> classes, ServletContext servletContext) {
+		System.out.println("AnnotationServlet.onStartup");
+		System.out.println("AnnotationServlet classes = " + classes);
+		System.out.println("AnnotationServlet servletContext = " + servletContext);
 	}
 }

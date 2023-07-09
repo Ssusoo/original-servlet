@@ -20,7 +20,8 @@ import java.io.IOException;
 public class AnnotationServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		System.out.println("Log : JakartaHandlesTypesAnnotationServlet.service");
+		System.out.println("Log : AnnotationServlet.service");
 		response.getWriter().println("HTTP Response : annotation"); // throws : IOException
 	}
 }
+

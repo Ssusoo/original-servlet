@@ -12,7 +12,7 @@ import java.io.IOException;
 public class ProgrammingServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		System.out.println("Log : JakartaProgrammingServlet.service");
+		System.out.println("Log : ProgrammingServlet.service");
 		response.getWriter().println("HTTP Response : ProgrammingServlet!!!"); // throws IOException
 	}
 }
