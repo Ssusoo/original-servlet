@@ -1,0 +1,14 @@
+package me.ssu.originalservlet.spring;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class SpringController {
+
+	@GetMapping("/welcome-spring")
+	public String spring() {
+		System.out.println("SpringController.spring");
+		return "spring!";
+	}
+}
