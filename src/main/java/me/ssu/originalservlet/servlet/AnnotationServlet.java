@@ -10,13 +10,13 @@ import java.io.IOException;
 /**
  * 서블릿 초기화 첫 번째 방법, 어노테이션 초기화 방법
  *
- * http://localhost:8080/test
+ * http://localhost:8080/annotation-servlet
  * Since:
  * Servlet 3.0
  * See Also:
  * jakarta.servlet.annotation.HandlesTypes
  */
-@WebServlet(urlPatterns = "/test")
+@WebServlet(urlPatterns = "/annotation-servlet")
 public class AnnotationServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
